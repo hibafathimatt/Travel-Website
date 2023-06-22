@@ -1,0 +1,175 @@
+{% load static %}
+<head>
+  <script src="static\bootstrap-4.3.1-dist\js\bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="{% static 'hiba.css' %}">
+  <link rel="stylesheet" href="{% static 's.css' %}">
+  <link rel="stylesheet" href="{% static 'r.css' %}">
+   
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light;">
+    <a class="navbar-brand" style="color: beige; letter-spacing: 2px; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 35px;" href="index">PLANgo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="index" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 23px; color: aliceblue;">Home <span class="sr-only">(current)</span></a>
+              </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="destination" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 23px; color: aliceblue;">Destination <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="traview" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 23px; color: aliceblue;" >Services</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 23px; color: aliceblue;">About Us</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="contact" style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; font-size: 23px; color: aliceblue;">Contact us</a>
+              </li>&nbsp;&nbsp;&nbsp;&nbsp;
+              
+        </ul>
+      </form>
+    </div>
+  </nav>
+</div>
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="{% static 'pho.jpg' %}" style="background-size: 50px; height: 490px;" alt="First slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h3 style=" letter-spacing: 2px; color: rgb(240, 227, 227); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style: italic; font-weight: bolder; font-size: xx-large;">Discover the best places to <br>enjoy your next vacation</h3>
+        <p style="font-family:'Times New Roman', Times, serif; color: bisque; font-size: larger;">We always make our customers happy by providing many choices</p>
+      </div>
+    </div>
+    <div class="carousel-item" >
+      <img class="d-block w-100" src="{% static 'ph.jpg' %}"  style="height: 490px;"alt="Second slide">
+      <div class="carousel-caption d-none d-md-block">
+        <h3 style="color: rgb(240, 227, 227); font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-style: italic; font-weight: bolder; 
+        font-size: xx-large;">Explore the beauty of journey</h3>
+        <p style="font-family:'Times New Roman', Times, serif; color: bisque; font-size: larger;">We always make our customers happy by providing many choices</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="{% static 'shanil.jpg' %}" style="height:490px ;"  alt="Third slide">
+    </div>
+  </div>
+</div><br>
+<div class="card1" style="margin-left: 22px;">
+<div class="bod">
+  <div class="card">
+      <div class="imgBox">
+          <img src="static/humayun's.jpg" alt="">
+          <div class="img-blur">
+              <a href="#">Explore</a>
+          </div>
+      </div>
+      <h2 class="title">
+          <label>New Delhi</label><br>
+          <button id="bt"><a href="Newdelhi">&nbsp;&nbsp;&nbsp;&nbsp;Learn More&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
+      </h2>
+  </div><br><br>
+  <div class="card">
+      <div class="imgBox">
+          <img src="static/tajmahal.jpg" alt="">
+          <div class="img-blur">
+              <a href="#">Explore</a>
+          </div>
+      </div>
+      <h2 class="title">
+         <label>Agra</label><br>
+          <button id="bt"><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;Learn More&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
+  </div><br><br>
+  <div class="card">
+      <div class="imgBox">
+          <img src="static/mumbai.jpg" alt="">
+          <div class="img-blur">
+              <a href="#">Explore</a>
+          </div>
+      </div>
+      <h2 class="title">
+          <label>Mumbai</label><br>
+          <button id="bt"><a href="#"> &nbsp;&nbsp;&nbsp;&nbsp;Learn More&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
+      </h2>
+  </div><br><br>
+  <div class="card">
+      <div class="imgBox">
+          <img src="static/goa.jpg" alt="">
+          <div class="img-blur">
+              <a href="#">Explore</a>
+          </div>
+      </div>
+      <h2 class="title">
+         <label>Goa</label><br>
+         <button id="bt"><a href="#"> &nbsp;&nbsp;&nbsp;&nbsp;Learn More&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
+  </div><br><br>
+  <div class="card">
+      <div class="imgBox">
+          <img src="static/th (17).jpg" alt="">
+          <div class="img-blur">
+              <a href="#">Explore</a>
+          </div>
+      </div>
+      <h2 class="title">
+         <label>Nainital</label><br>
+         <button id="bt"><a href="#"> &nbsp;&nbsp;&nbsp;&nbsp;Learn More&nbsp;&nbsp;&nbsp;&nbsp;</a></button>
+  </div><br><br>
+</div><br>
+<div class="name">
+  <a href="destination" ><button id="np">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;View All Destinations &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+</div>
+</div><BR><BR>
+<div class="cont" style="background-color: aliceblue; height: 330px;">
+  <div class="left"><br>
+      <h2 style="color: rgb(16, 55, 76); margin-left: 9px; letter-spacing: 1px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" class="up">Our best features...!</h2>
+      &nbsp;&nbsp;<i class="fa fa-heart" style="color: rgb(17, 70, 70);"></i>
+      <label style="font-size: 17px;font-family: 'Times New Roman', Times, serif;">&nbsp;&nbsp;Find authentic experiences</label><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size: 13px; color: rgb(131, 125, 125);">
+          Follow your curiosity,feel the joy of real discoveries,and explore more. </label><br><br>
+          &nbsp;&nbsp;<i class="fa fa-heart" style="color: rgb(17, 70, 70);"></i>
+          <label style="font-size: 17px;font-family: 'Times New Roman', Times, serif;">&nbsp;&nbsp;Book with flexibility</label><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size: 13px; color: rgb(131, 125, 125);">
+              Get free cancellation,plan on the go, and book last minute. </label><BR><BR>
+           &nbsp;&nbsp;<i class="fa fa-heart" style="color: rgb(17, 70, 70);"></i>
+           <label style="font-size: 17px;font-family: 'Times New Roman', Times, serif;">&nbsp;&nbsp;Explore the possibilities</label><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="font-size: 13px; color: rgb(131, 125, 125);">
+           Enjoy personalised recommedations and more.We always prioritize customer comfort and statisfication. </label><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </div><br>
+  <div class="right">
+          <img src="static/upo.png" style="margin-left: 220px; margin-right: 65px; height: 270px; margin-top: 15px;">
+
+      </div>
+  </div>
+</div>
+<div class="footer" style="height: 250px;">
+  <div class="left">
+    <div class="info-wrap">
+      <h2 class="info-title">Contact Information</h2>
+      <ul class="info-details">
+          <li>
+              <i class="fas fa-phone-alt"></i>
+              <span>Phone:</span> <a href="#">8590643371</a>
+          </li><br>
+          <li>
+              <i class="fas fa-paper-plane"></i>
+              <span>Email:</span> <a href="#">info@PLANgo.com</a>
+          </li><br>
+          <li>
+              <i class="fas fa-globe"></i>
+              <span>Website:</span> <a href="#">PLANgO.com</a>
+          </li>
+      </ul>
+  </div>
+  </div>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>

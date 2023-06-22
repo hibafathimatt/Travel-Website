@@ -1,0 +1,437 @@
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+        *{
+            margin: 0%;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Times New Roman', Times, serif;
+        }
+        body{
+            display:flex;
+            min-height: 100vh;
+            background: rgba(214, 210, 210, 0);
+        }
+        .card{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            width: 210px;
+            height: 280px;
+            margin: 0 28px;
+            background:rgb(249, 246, 246);
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .card .title{
+            margin: 15px 0;
+        }
+        .card .imgBox{
+            position: relative;
+            width: 180px;
+            height: 180px;
+            background: rgb(166, 125, 125);
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            top: 15px;
+        }
+        .card:hover{
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .imgBox img{
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0;
+
+        }
+        .card .imgBox:hover .img-blur{
+            opacity: 3;
+        }
+        .card .imgBox img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .img-blur{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(5px);
+            justify-content: center;
+            top: 2px;
+            left: 0;
+            display: flex;
+            align-items: center;
+            opacity: 0;
+            transition: 0.5s;
+        }
+        .card .text{
+            font-size: medium;
+            color: #555;
+            opacity: 0.6;
+        }
+        .title{
+            text-decoration: none;
+            transition: 0.5s;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        .card .img-blur a:hover{
+            text-decoration: underline;
+        }
+        .card .img-blur a{
+            text-decoration: none;
+            color: #fff;
+            letter-spacing: 1px;
+        }
+        .card .img-blur::before{
+            content: '';
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 155px;
+            height: 155px;
+            border-radius: 50%;
+            border: 2px dotted #fff;
+            pointer-events: none;
+            animation: border-anime 15s linear infinite;
+        }
+        @keyframes border-anime{
+            from{
+                transform: rotate(0);
+            }to{
+                transform: rotate(0);
+            }
+        }
+        .card .title a:hover{
+            color: rgb(157, 176, 176);
+        }
+        #bt{
+            background-color: rgb(152, 159, 215);
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            border-color: rgb(226, 230, 223);
+           font: bold;
+           color: #fff;
+        }
+        #bt a{
+            color: #fff;
+            letter-spacing: 1px;
+            font-family:'Times New Roman', Times, serif;
+            font-size: medium;
+        }
+</style>
+</head>
+<body>
+    <div class="coloumn">
+    <div class="card">
+        <div class="imgBox">
+            <img src="static/humayun's.jpg" alt="">
+            <div class="img-blur">
+                <a href="#">Explore</a>
+            </div>
+        </div>
+        <h2 class="title">
+            <label>New Delhi</label><br>
+            <a href="#"><button id="bt">&nbsp;&nbsp;&nbsp;&nbsp;Learn More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        </h2>
+    </div><br><br>
+    <div class="card">
+        <div class="imgBox">
+            <img src="static/tajmahal.jpg" alt="">
+            <div class="img-blur">
+                <a href="#">Explore</a>
+            </div>
+        </div>
+        <h2 class="title">
+           <label>Agra</label><br>
+            <a href="#" ><button id="bt">&nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+    </div><br><br>
+    <div class="card">
+        <div class="imgBox">
+            <img src="static/mumbai.jpg" alt="">
+            <div class="img-blur">
+                <a href="#">Explore</a>
+            </div>
+        </div>
+        <h2 class="title">
+            <label>Mumbai</label><br>
+            <a href="#"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        </h2>
+    </div><br><br>
+    <div class="card">
+        <div class="imgBox">
+            <img src="static/goa.jpg" alt="">
+            <div class="img-blur">
+                <a href="#">Explore</a>
+            </div>
+        </div>
+        <h2 class="title">
+           <label>Goa</label><br>
+          <a href="#"><button id="bt">&nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        <p class="text">
+            </p>
+    </div><br><br>
+    <div class="card">
+        <div class="imgBox">
+            <img src="static/th (17).jpg" alt="">
+            <div class="img-blur">
+                <a href="#">Explore</a>
+            </div>
+        </div>
+        <h2 class="title">
+           <label>Nainital</label><br>
+           <a href="#"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        <p class="text">
+            </p>
+    </div><br><br>
+    </div>
+    <div class="coloumn">
+    <div class="card">
+        <div class="imgBox">
+            <img src="static/ban.jpg" alt="">
+            <div class="img-blur">
+                <a href="#">Explore</a>
+            </div>
+        </div>
+        <h2 class="title">
+           <label>Bangalore</label><br>
+           <a href="#"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+    </div><br><br>
+    <div class="card">
+        <div class="imgBox">
+            <img src="static/th.jpg" alt="">
+            <div class="img-blur">
+                <a href="#">Explore</a>
+            </div>
+        </div>
+        <h2 class="title">
+           <label>Jaipur</label><br>
+           <a href="#"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        </div><br><br>
+    <div class="card">
+        <div class="imgBox">
+            <img src="static/th (1).jpg" alt="">
+            <div class="img-blur">
+                <a href="#">Explore</a>
+            </div>
+        </div>
+        <h2 class="title">
+           <label>Chennai</label><br>
+           <a href="#"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        </div><br><br>
+    <div class="card">
+        <div class="imgBox">
+            <img src="static/th (2).jpg" alt="">
+            <div class="img-blur">
+                <a href="#">Explore</a>
+            </div>
+        </div>
+        <h2 class="title">
+           <label>Kolkata</label><br>
+           <a href="#"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+    </div><br><br>
+    <div class="card">
+        <div class="imgBox">
+            <img src="static/th (16).jpg" alt="">
+            <div class="img-blur">
+                <a href="#">Explore</a>
+            </div>
+        </div>
+        <h2 class="title">
+           <label>Wayanad</label><br>
+           <a href="#"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        <p class="text">
+            </p>
+    </div><br><br>
+    </div>
+    <div class="coloumn">
+        <div class="card">
+            <div class="imgBox">
+                <img src="static/th (3).jpg" alt="">
+                <div class="img-blur">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <h2 class="title">
+               <label>Manali</label><br>
+               <a href="#"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        </div><br><br>
+        <div class="card">
+            <div class="imgBox">
+                <img src="static/th (4).jpg" alt="">
+                <div class="img-blur">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <h2 class="title">
+               <label>Kochi</label><br>
+               <a href="#"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        </div><br><br>
+        <div class="card">
+            <div class="imgBox">
+                <img src="static/th (5).jpg" alt="">
+                <div class="img-blur">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <h2 class="title">
+               <label>Munnar</label><br>
+               <a href="#"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+              
+        </div><br><br>
+        <div class="card">
+            <div class="imgBox">
+                <img src="static/th (7).jpg" alt="">
+                <div class="img-blur">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <h2 class="title">
+               <label>Amritsar</label><br>
+               <a href="#"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        </div><br><br>
+        <div class="card">
+            <div class="imgBox">
+                <img src="static/th (18).jpg" alt="">
+                <div class="img-blur">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <h2 class="title">
+               <label>Jaisalmer</label><br>
+               <a href="#"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+            <p class="text">
+                </p>
+        </div><br><br>
+    </div>
+    <div class="coloumn">
+        <div class="card">
+            <div class="imgBox">
+                <img src="static/th (8).jpg" alt="">
+                <div class="img-blur">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <h2 class="title">
+               <label>Ahamedabad</label><br>
+               <a href="#"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        </div><br><br>
+        <div class="card">
+            <div class="imgBox">
+                <img src="static/th (9).jpg" alt="">
+                <div class="img-blur">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <h2 class="title">
+               <label>Pune</label><br>
+               <a href="#"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        </div><br><br>
+        <div class="card">
+            <div class="imgBox">
+                <img src="static/th (10).jpg" alt="">
+                <div class="img-blur">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <h2 class="title">
+               <label>Mysore</label><br>
+               <a href="#"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        </div><br><br>
+        <div class="card">
+            <div class="imgBox">
+                <img src="static/th (11).jpg" alt="">
+                <div class="img-blur">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <h2 class="title">
+               <label>Puthucheri</label><br>
+               <a href="#"><button id="bt">&nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        </div><br><br>
+        <div class="card">
+            <div class="imgBox">
+                <img src="static/goa.jpg" alt="">
+                <div class="img-blur">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <h2 class="title">
+               <label>Goa</label><br>
+               <a href="#" id="bt"><button id="bt">&nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+            <p class="text">
+                </p>
+        </div><br><br>
+    </div>
+    <div class="coloumn">
+        <div class="card">
+            <div class="imgBox">
+                <img src="static/th (12).jpg" alt="">
+                <div class="img-blur">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <h2 class="title">
+               <label>Hambi</label><br>
+               <a href="hampi" id="bt"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        </div><br><br>
+        <div class="card">
+            <div class="imgBox">
+                <img src="static/th (13).jpg" alt="">
+                <div class="img-blur">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <h2 class="title">
+               <label>Jodhpur</label><br>
+               <a href="#" id="bt"><button id="bt">&nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        </div><br><br>
+        <div class="card">
+            <div class="imgBox">
+                <img src="static/th (14).jpg" alt="">
+                <div class="img-blur">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <h2 class="title">
+               <label>Varanasi</label><br>
+               <a href="#" id="bt"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        </div><br><br>
+        <div class="card">
+            <div class="imgBox">
+                <img src="static/th (15).jpg" alt="">
+                <div class="img-blur">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <h2 class="title">
+               <label>Shimla</label><br>
+               <a href="#" id="bt"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        </div><br><br>
+        <div class="card">
+            <div class="imgBox">
+                <img src="static/th (19).jpg" alt="">
+                <div class="img-blur">
+                    <a href="#">Explore</a>
+                </div>
+            </div>
+            <h2 class="title">
+               <label>Himachel predesh</label><br>
+               <a href="#" id="bt"><button id="bt"> &nbsp;&nbsp;&nbsp;&nbsp;Leran More&nbsp;&nbsp;&nbsp;&nbsp;</button></a>
+        </div><br><br>
+    </div>
+
+
+    </form>
+</body>

@@ -1,0 +1,28 @@
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+    <div class="form">
+        <div class="header">
+            <h1 class="pas">PLANgO</h1>
+        </div>
+        <form action="reg" method="post" style="margin-left: 450px; margin-top: 80px;">
+            {% csrf_token %}
+            <label style="font-size: 35px; font-style: italic; margin-left: -69px; color: rgb(255, 255, 255); letter-spacing: 1px;" >Get Customized Travel Packages</label><br>
+            <label style="font-size: 17px; color: rgb(245, 254, 255);"> Plan Your Trip With Experts And Get Best Offers</label><br><br>
+            <label>Your Name*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="fn" placeholder="Enter Your Name" required><br><br>
+            <label>Phone Number*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number" name="pn" placeholder="Enter Your Number" required><br><br>
+            <label>Your Email*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" name="em" placeholder="Email Address" required><br><br>
+            <label>Password*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" name="ps" placeholder="Enter a Password" required><br><br>
+            <label>To Destination*</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="to" placeholder="Enter Destination" required><br><br>
+            <button type="submit" style="background-color: rgb(255, 255, 255);margin-left: 109px; border-radius: 5px;">REGISTER</button>
+            
+        </form>
+    </div>
+    </body>

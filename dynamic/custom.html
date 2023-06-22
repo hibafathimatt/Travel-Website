@@ -1,0 +1,79 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>plango</title>
+    <meta name="viewport" content="width=device-width,
+      initial-scale=1.0"/>
+    <link rel="stylesheet" href="{% static 'y.css' %}" >
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="form-title">CUSTOMISE TRAVEL PACKAGES</h1>
+      <form action="#">
+        <div class="main-user-info">
+          <div class="user-input-box">
+            <label for="fullName">Full Name</label>
+            <input type="text"
+                    id="fullName"
+                    name="fullName"
+                    placeholder="Enter Full Name"/>
+          </div>
+          <div class="user-input-box">
+            <label for="email">Email</label>
+            <input type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter Email"/>
+          </div>
+          <div class="user-input-box">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="text"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    placeholder="Enter Phone Number"/>
+          </div>
+          <div class="user-input-box">
+            <label for="password">Adult</label>
+            <input type="number"
+                    id="password"
+                    name="password"
+                    placeholder="adult"/>
+          </div>
+          <div class="user-input-box">
+            <label for="username">Destination</label>
+            <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter destination"/>
+          </div>
+          <div class="user-input-box">
+            <label for="confirmPassword">Budget</label>
+            <input type="number"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                    placeholder="Budget"/>
+          </div>
+          <div class="user-input-box">
+            <label for="username">Date of Journey</label>
+            <input type="date"
+                    id="username"
+                    name="username"
+                    placeholder="Enter a prefered date of jouney"/>
+          </div>
+          <div class="user-input-box">
+            <label for="username">Boarding at</label>
+            <input type="text"
+                    id="username"
+                    name="username"
+                    placeholder="boarding at"/>
+          </div>
+        </div>
+        <div class="form-submit-btn">
+          <input type="submit" value="Submit">
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

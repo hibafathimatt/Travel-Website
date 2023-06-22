@@ -1,0 +1,42 @@
+
+    
+{% load static %}
+<head>
+    <link rel="stylesheet" href="{% static 'homee.css' %}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'homee.css' %}">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <div class="top">
+                <label style="margin-left: 40px; font-size: 17px; color: #fff;">Have an account?</label>
+                <header style="margin-left: 75px; font-size: 22px;">Login</header><br>
+            </div>
+            <div class="left">
+                    <form action="login" method="post" >
+                        {% csrf_token %}
+                        <div class="input-field">
+                        <input type="email" class="input" name="em" placeholder="Username">
+                        <i class='bx bx-user' ></i>
+                        </div>
+                    {{error}}
+                        <div class="input-field">
+                        <input type="password" class="input" name="ps" placeholder="password">
+                        <i class='bx bx-lock-alt'></i>
+                       </div>
+                        <button type="submit" CLASS="submit">
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LOGIN&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
+                        
+                  <br><br>
+
+                        <label style="color: #fff;">Don't have an account yet?</label>&nbsp;<a href="reg" style="color: #b8c3ca;">Register Here</a><br><br>
+                    </form>
+                    </div>
+                </div>
+        </div>
+        </body>
